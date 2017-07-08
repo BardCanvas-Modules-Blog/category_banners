@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+    
+    <display_name>Estandartes de categorías</display_name>
+    <icon>fa-flag</icon>
+    <description>
+        Añade un estandarte personalizable al inicio de los índices de categorías.
+    </description>
+    
+    <form>
+        <fieldset_legend>Estandarte en índice</fieldset_legend>
+        <background>
+            <caption>Imagen de fondo</caption>
+            <info><![CDATA[
+                Especifica una imagen de fondo para el estandarte. Dimensiones sugeridas: <code>900x200px</code>.
+                Se ajustará al contenido manteniendo la relación de aspecto.<br>
+                <b>Nota:</b> Al especificar una imagen, el texto del estandarte se cambiará a
+                blanco con sombra negra para facilitar la visibilidad.
+            ]]></info>
+        </background>
+        <title>
+            <caption>Título extendido</caption>
+            <info><![CDATA[
+                Puedes reemplazar el título de la categoría por algo más descriptivo en el estandarte.
+                Si lo dejas vacío, se usará el título actual de la categoría.
+            ]]></info>
+        </title>
+        <description>
+            <caption>Descripción extendida</caption>
+            <info><![CDATA[
+                Especifica una descripción completa a mostrar bajo el titulo en el estandarte.
+                Si lo dejas vacío, se usará la descripción actual de la categoría.<br>
+                Puedes usar HTML si lo necesitas.
+            ]]></info>
+        </description>
+    </form>
+    
+    <categories_browser>
+        <has_banner>Tiene estandarte</has_banner>
+        <background>Fondo</background>
+        <title>Título</title>
+        <description>Descripción</description>
+    </categories_browser>
+    
+    <settings_data>
+        <specs key="data" disabled="true" />
+    </settings_data>
+    
+</language>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+    
+    <display_name>Category Banners</display_name>
+    <icon>fa-flag</icon>
+    <description>
+        Adds a customizable banner at the top of category indexes. 
+    </description>
+    
+    <form>
+        <fieldset_legend>Index banner</fieldset_legend>
+        <background>
+            <caption>Background image</caption>
+            <info><![CDATA[
+                Specify a background image for the banner. Suggested dimensions: <code>900x200px</code>.
+                It will be resized to fit the contents while keeping its aspect ratio.<br>
+                <b>Note:</b> If you specify an image, the text inside the banner will be changed to
+                white with black shadow to improve visibility.
+            ]]></info>
+        </background>
+        <title>
+            <caption>Extended title</caption>
+            <info><![CDATA[
+                You can override the category title on the banner.
+                If empty, the actual category title will be used.
+            ]]></info>
+        </title>
+        <description>
+            <caption>Extended description</caption>
+            <info><![CDATA[
+                Specify a full description to be shown on the banner.
+                If empty, the default description will be rendered.<br>
+                Yoy may use any HTML markup as needed.
+            ]]></info>
+        </description>
+    </form>
+    
+    <categories_browser>
+        <has_banner>Has banner</has_banner>
+        <background>Background</background>
+        <title>Title</title>
+        <description>Description</description>
+    </categories_browser>
+    
+    <settings_data>
+        <specs key="data" disabled="true" />
+    </settings_data>
+    
+</language>

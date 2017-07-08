@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    
+    <version>0.0.1</version>
+    <group>modules_blog</group>
+    
+    <working_flags>
+        <install>true</install>
+        <uninstall>true</uninstall>
+        <enable>true</enable>
+        <disable>true</disable>
+    </working_flags>
+    
+    <extends_to>
+        <posts>
+            <posts_by_category_index>
+                <before_heading>extenders/posts/render_banner.inc</before_heading>
+            </posts_by_category_index>
+        </posts>
+        <categories>
+            <browser>
+                <per_record_function_hooks priority="300">extenders/categories/browser_function_hooks.inc</per_record_function_hooks>
+            </browser>
+            <index>
+                <top>extenders/categories/form_scripts.inc</top>
+            </index>
+            <form>
+                <before_submit_button>extenders/categories/form_controls.inc</before_submit_button>
+            </form>
+            <save>
+                <after_saving>extenders/categories/save_data.inc</after_saving>
+            </save>
+            <get_as_json>
+                <before_outputting_data>extenders/categories/inject_json_data.inc</before_outputting_data>
+            </get_as_json>
+        </categories>
+        <basic_ad_injections>
+            <content_top>
+                <pre_rendering>extenders/basic_ad_injections/prevent_injection_on_content_top.inc</pre_rendering>
+            </content_top>
+        </basic_ad_injections>
+    </extends_to>
+    
+    <template_includes>
+        <html_head>head_styles.inc</html_head>
+    </template_includes>
+    
+</module>

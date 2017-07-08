@@ -1,0 +1,20 @@
+/**
+ * Category banner styles
+ *
+ * @package    HNG2
+ * @subpackage category_banners
+ * @author     Alejandro Caballero - lava.caballero@gmail.com
+ */
+
+.category_banner {
+    margin: 0 0 20px 0; background: transparent center center no-repeat; background-size: cover;
+}
+
+.category_banner.shadowed    { padding: 10px; color: white; text-shadow: 2px  2px 3px #000; }
+.category_banner.shadowed h1 { color: white; }
+.category_banner.shadowed a  { color: white; }
+
+.category_banner .above            { line-height: 18pt; }
+.category_banner .title            { font-size: 18pt; }
+.category_banner .title_pagination { font-size: 14pt; float: right; vertical-align: bottom; }
+.category_banner .description      { font-size: 12pt; margin-top: 10px; }
